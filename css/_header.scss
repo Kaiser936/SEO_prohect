@@ -1,0 +1,29 @@
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #3A6447;
+
+    h1 {
+        color: #fafafa;
+        margin: 1rem;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-right: 1rem;
+        a {
+            margin: 1rem;
+            color: #fafafa;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #3A6447;
+            background-color: #fafafa;
+            padding: 0.5rem;
+            transition: transform 0.3s ease-out;
+        }
+    }
+}

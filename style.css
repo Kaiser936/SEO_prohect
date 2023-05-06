@@ -1,0 +1,309 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Titillium Web", sans-serif;
+}
+
+body {
+  background-image: url("../img/bg-main.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #3A6447;
+}
+header h1 {
+  color: #fafafa;
+  margin: 1rem;
+}
+header nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 1rem;
+}
+header nav a {
+  margin: 1rem;
+  color: #fafafa;
+  text-decoration: none;
+}
+header nav a:hover {
+  color: #3A6447;
+  background-color: #fafafa;
+  padding: 0.5rem;
+  transition: transform 0.3s ease-out;
+}
+
+footer {
+  background-color: #3A6447;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  min-height: 30px;
+  color: #fafafa;
+}
+footer i {
+  margin: 10px;
+}
+
+main {
+  margin: 0% 20%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #fafafa;
+}
+main .actualités {
+  width: 100%;
+  padding: 0rem 1rem;
+  align-self: center;
+}
+main .actualités h1 {
+  text-align: center;
+}
+main .resultats {
+  width: 30%;
+  padding: 0rem 1rem;
+  align-self: center;
+}
+main .resultats h1 {
+  text-align: center;
+}
+main .resultats article {
+  background-color: #fafafa;
+}
+main .resultats article .container-result {
+  margin: 10px;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+}
+main .resultats article .container-result .card-result {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 60px;
+  margin-top: 15px;
+  background-color: rgb(207, 207, 207);
+  text-align: center;
+  color: #3A6447;
+}
+main .resultats article .container-result .card-result .date {
+  color: rgb(107, 107, 107);
+  font-size: smaller;
+}
+main .resultats article .container-result .card-result .result {
+  font-size: 1rem;
+}
+main .pronostic {
+  width: 100%;
+  padding: 50px 30px;
+}
+main .pronostic .intro {
+  text-align: center;
+  padding: 20px;
+}
+main .pronostic .warning {
+  text-align: center;
+  font-size: 0.8rem;
+  background-color: #8b0505;
+  color: #fafafa;
+  margin: 20px;
+}
+main .pronostic .container-card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+main .pronostic .container-card a {
+  text-decoration: none;
+  color: black;
+}
+main .pub {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 200px;
+  background-color: rgb(255, 153, 0);
+  color: #fafafa;
+  text-align: center;
+  rotate: 10deg;
+  margin-top: 150px;
+  margin-left: 50px;
+}
+main .pub img {
+  width: 200px;
+}
+main .pub2 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 150px;
+  background-color: rgb(0, 0, 0);
+  color: #fafafa;
+  text-align: center;
+  rotate: -10deg;
+  margin-top: 150px;
+  margin-right: 50px;
+}
+main .pub2 img {
+  width: 150px;
+}
+main .ligueChp {
+  width: 100%;
+}
+main .ligueChp article {
+  margin: 30px;
+  min-height: 300px;
+  min-width: 60%;
+  width: 100% !important;
+  text-align: center;
+}
+main .ligueChp article .titre {
+  background-color: #8258FA;
+  border-radius: 30px;
+  font-size: 30px;
+  text-align: center;
+  padding: 2%;
+  color: rgb(255, 255, 255);
+  max-width: 50%;
+  margin-left: 25%;
+}
+main .ligueChp article .container-result {
+  min-height: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  background: none;
+}
+main .ligueChp article .container-result .card-resultat {
+  min-width: 40%;
+  margin: 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 80px;
+  text-align: center;
+  background-color: #ffffff;
+  border: solid 2px #ffffff;
+  border-radius: 30px;
+}
+main .ligueChp article .container-result .card-resultat .date {
+  color: #8258FA;
+  font-size: smaller;
+}
+main .ligueChp article .container-result .card-resultat .result {
+  font-size: 20px;
+}
+
+.card-actu {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 100%;
+  margin: 30px 0px;
+  border: 1px solid;
+}
+.card-actu img {
+  max-width: 200px;
+  vertical-align: middle;
+  overflow: hidden;
+}
+.card-actu .text p {
+  padding-top: 1rem;
+  font-size: 1rem;
+  margin-left: 2rem;
+}
+.card-actu .text h2 {
+  font-size: 1.2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.card-p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  border: 1px solid;
+  padding: 10px 0px;
+}
+.card-p img {
+  width: 100%;
+}
+.card-p .text {
+  margin-bottom: 1rem;
+}
+.card-p .text p {
+  font-size: 1rem;
+  margin-left: 2rem;
+}
+.card-p .text h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  align-self: center;
+}
+
+.card-prono {
+  border-top: 1px solid;
+  display: flex;
+  width: 380px;
+  padding: 20px 0px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.card-prono img {
+  width: 1.5rem;
+}
+
+.card-prono:hover {
+  border-left: 6px solid #3A6447;
+  border-right: 6px solid #3A6447;
+  background-color: rgba(58, 100, 71, 0.3764705882);
+}
+
+article {
+  margin: 30px;
+  background-color: #ffffff;
+  min-height: 300px;
+  max-width: 70%;
+  margin-left: 300px;
+}
+article .titre {
+  font-size: 30px;
+  text-align: center;
+  padding: 5%;
+}
+article .container-result {
+  background-color: #ffffff;
+  margin: 10px;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+}
+article .container-result .card-result {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 60px;
+  margin-top: 30px;
+  background-color: #E6E6E6;
+  text-align: center;
+}
+article .container-result .card-result .date {
+  color: rgb(165, 161, 161);
+  font-size: smaller;
+}
+article .container-result .card-result .result {
+  font-size: 20px;
+}/*# sourceMappingURL=style.css.map */

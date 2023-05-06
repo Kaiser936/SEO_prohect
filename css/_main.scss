@@ -1,0 +1,169 @@
+main {
+    margin: 0% 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #fafafa;
+    .actualités {
+        width: 100%;
+        padding: 0rem 1rem;
+        align-self: center;
+
+        h1 {
+            text-align: center;
+        }
+    }
+    .resultats {
+        width: 30%;
+        padding: 0rem 1rem;
+        align-self: center;
+
+        h1 {
+            text-align: center;
+        }
+
+        article{
+            background-color: #fafafa;
+
+            .container-result{
+                margin: 10px;
+                min-height: 100px;
+                display: flex;
+                flex-direction: column;
+        
+                .card-result{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    min-height: 60px;
+                    margin-top: 15px;
+                    background-color: rgb(207, 207, 207);
+                    text-align: center;
+                    color: #3A6447;
+        
+                    .date{
+                        color: rgb(107, 107, 107);
+                        font-size: smaller;
+                    }
+                    .result{
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+    .pronostic {
+        width: 100%;
+        padding: 50px 30px;
+
+        .intro {
+            text-align: center;
+            padding: 20px;
+        }
+        .warning {
+            text-align: center;
+            font-size: 0.8rem;
+            background-color: #8b0505;
+            color: #fafafa;
+            margin: 20px;
+        }
+
+        .container-card {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            a{
+                text-decoration: none;
+                color: black;
+            }  
+        }
+    }
+    .pub{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 200px;
+        background-color: rgb(255, 153, 0);
+        color: #fafafa;
+        text-align: center;
+        rotate: 10deg;
+        margin-top: 150px;
+        margin-left: 50px;
+
+        img {
+            width: 200px;
+        }
+    }
+    .pub2 {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 150px;
+        background-color: rgb(0, 0, 0);
+        color: #fafafa;
+        text-align: center;
+        rotate: -10deg;
+        margin-top: 150px;
+        margin-right: 50px;
+
+        img {
+            width: 150px;
+        }
+    }
+
+    .ligueChp{
+        width: 100%;
+        article{
+            margin: 30px;
+            min-height: 300px;
+            min-width: 60%;
+            width: 100% !important;
+            text-align: center;
+        
+            .titre{
+                background-color: #8258FA;
+                border-radius: 30px;
+                font-size: 30px;
+                text-align: center;
+                padding: 2%;
+                color: rgb(255, 255, 255);
+                max-width: 50%;
+                margin-left: 25%;
+
+    
+            }
+            .container-result{
+        
+                min-height: 100px;
+                display: flex;
+                flex-wrap:wrap;
+                flex-direction: row;
+                justify-content: center;
+                background: none;
+                
+                
+                .card-resultat{
+                    min-width: 40%;
+                    margin: 3%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    min-height: 80px;
+                    text-align: center;
+        
+                    background-color: #ffffff;
+                    border: solid 2px #ffffff;
+                    border-radius: 30px;
+        
+                    .date{
+                        color: #8258FA;
+                        font-size: smaller;
+                    }
+                    .result{
+                        font-size: 20px;
+                    }
+                }
+            }
+    }
+}
+}

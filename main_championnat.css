@@ -1,0 +1,30 @@
+article {
+  margin: 30px;
+  background-color: greenyellow;
+  min-height: 300px;
+  max-width: 70%;
+  margin-left: 300px;
+}
+article .container-result {
+  background-color: aqua;
+  margin: 10px;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+}
+article .container-result .card-result {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 60px;
+  margin-top: 30px;
+  background-color: bisque;
+  text-align: center;
+}
+article .container-result .card-result .date {
+  color: rgb(165, 161, 161);
+  font-size: smaller;
+}
+article .container-result .card-result .result {
+  font-size: 20px;
+}/*# sourceMappingURL=main_championnat.css.map */
